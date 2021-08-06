@@ -1,9 +1,40 @@
-const packageJson = require('package-json');
-
-(async () => {
-	console.log(await packageJson('ava'));
-	//=> {name: 'ava', ...}
-
-	// Also works with scoped packages
-	console.log(await packageJson('@sindresorhus/df'));
-})();
+{
+  "name": "metos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Primeiro teste de webbsite meto",
+  "keywords": [
+    "albums",
+    "photos",
+    "management"
+  ],
+  "homepage": "https://github.com/ygormagrii1/metos/",
+  "issues": "https://github.com/ygormagrii1/metos/issues",
+  "license": "LGPL-3.0-only",
+  "author": "Ygor Magri,
+  "repository": "github:ygormagrii1",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "scripts": {
+    "start": "echo \"Hello Metos!\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "standard-version": "^6.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.13.23",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.6"
+  }
+}
